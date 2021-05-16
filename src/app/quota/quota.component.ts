@@ -8,11 +8,11 @@ import {Quote} from '../quote';
 })
 export class QuotaComponent implements OnInit {
   quotes:Quote[]=[
-    new Quote('Life is what  you make it', 'Quote by Allan.M'),
-    new Quote('Love is a Jouurney', 'Quote by sheng peng'),
-    new Quote('You Only Live Once', 'Quote by Bad Thoughts'),
-    new Quote('What goes around...', '  Quote by Ash Tray'),
-    new Quote('Karma is a B****.', 'Quote by Bad Thoughts')
+    new Quote('Life is what  you make it', 'Quote has 5 votes', 'Allan.M', 'A.M.M'),
+    new Quote('Love is a Jouurney', 'Quote has 1 vote', 'Sheng Peng', 'B.K.M'),
+    new Quote('You Only Live Once', 'Quote has 2 votes', 'Bad Thougts', 'S.K.L'),
+    new Quote('What goes around...', 'Quote has 3 votes', 'Ash Tray', 'L.M.N'),
+    new Quote('Karma is a B****.', 'Quote has 4 votes', 'Bad Thoughts', 'P.K.M')
     
   ];
 
