@@ -1,4 +1,5 @@
 <p>{{quote.description}}</p>
 <P>The quote was uploaded by {{quote.submission}}</P>
+<button class="btn btn-sm btn-success" (click)='upvote()'>{{quote.likes}}</button>
+<button lass="btn btn-sm hate" id="hate" (click)='downvote()'>{{quote.dislikes}}</button>
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
-
