@@ -3,7 +3,7 @@
 <div>
    <ol>
       <div *ngFor='let quote of quotes; let i= index' >
-      <li><h3>{{quote.sentence}}</h3></li>
+      <li appHighlighter><h3>{{quote.sentence}}</h3></li>
       <button (click)='toggleDetails(i)'  class="btn btn-primary">Details</button>
       <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isDelete) = 'deleteQuote($event,i)'></app-quote-details>
    </div>
