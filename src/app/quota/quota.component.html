@@ -2,7 +2,11 @@
 <h1>Trending Quotes</h1>
 <div>
    <ol>
-      <li *ngFor='let quote of quotes'><h3>{{quote.name}}</h3></li>
+      <div *ngFor='let quote of quotes: let i=index' >
+      <li><h3>{{quote.name}}</h3></li>
+      <button (click)='toggleDetails(i)'>Details</button>
+      <app-quote-details *ngIf='goal.showDescription' [quote]='quote'></app-quote-details>
+   </div>
    </ol>
 </div>
 </div>
