@@ -17,4 +17,10 @@ h2{
 .footer{
     width: 100%;
     height: 100px;
+    background-color: turquoise;
+    text-align: center;
+}
+.footer>p{
+    color: black;
+    margin-bottom: 0px;
 }
