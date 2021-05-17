@@ -1,6 +1,9 @@
 <div class="container">
-<h1>Trending Quotes</h1>
-<div>
+   <div id="header">
+<h1 class="text-center">Trending Quotes</h1>
+   </div>
+<div class="row">
+<div class="col-md-6" id="quotes">
    <ol>
       <div class="box" *ngFor='let quote of quotes; let i= index' >
       <li appHighlighter><h3>{{quote.sentence}}</h3></li>
@@ -10,7 +13,8 @@
    </ol>
 </div>
 
-<div>
+<div class="col-md-6">
    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>
 </div>
 </div>
