@@ -1,0 +1,7 @@
+.box{
+    border: 2px solid cyan;
+    border-radius: 8px;
+    background-color: darkgray;
+    width: 400px;
+    margin: 10px;
+}

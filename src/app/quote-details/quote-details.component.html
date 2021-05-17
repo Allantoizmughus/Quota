@@ -1,5 +1,7 @@
+<div>
 <p>{{quote.description}}</p>
 <P>The quote was uploaded by {{quote.submission}}, <span id="when">{{quote.postDate|dateCount}} days ago.</span></P>
-<button class="btn btn-sm btn-success" (click)='upvote()'>{{quote.likes}}<i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
-<button lass="btn btn-sm hate" id="hate" (click)='downvote()'>{{quote.dislikes}}<img src="thumbs-down-silhouette.png" height="25px" width="25px"></button>
+<button class="btn btn-sm btn-success" (click)='upvote()'>{{quote.likes}}</button>
+<button class="btn btn-sm hate" id="hate" (click)='downvote()'>{{quote.dislikes}}</button>
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
+</div>

@@ -2,7 +2,7 @@
 <h1>Trending Quotes</h1>
 <div>
    <ol>
-      <div *ngFor='let quote of quotes; let i= index' >
+      <div class="box" *ngFor='let quote of quotes; let i= index' >
       <li appHighlighter><h3>{{quote.sentence}}</h3></li>
       <button (click)='toggleDetails(i)'  class="btn btn-primary">Details</button>
       <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isDelete) = 'deleteQuote($event,i)'></app-quote-details>
